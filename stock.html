@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our extensive selection of pharmacy products including prescription medications, over-the-counter drugs, and wellness products.">
+    <meta name="keywords" content="pharmacy products, medications, OTC drugs, wellness products, health supplements, prescription drugs">
+    <title>Our Products | Elixir Pharma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.svg" alt="Elixir Pharma Logo" width="180">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="stock.html" class="active">Our Products</a></li>
+                    <li><a href="orders.html">Order Online</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="cart-icon">
+                <a href="#cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Hero Section -->
+    <section class="products-hero">
+        <div class="container">
+            <div class="products-hero-content">
+                <h1>Our <span class="highlight">Products</span></h1>
+                <p class="subtitle">Quality medications and health products for your wellness needs</p>
+                <div class="product-search-large">
+                    <input type="text" placeholder="Search for products...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-filter">
+                <div class="filter-category">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#" class="active" data-category="all">All Products</a></li>
+                        <li><a href="#" data-category="prescription">Prescription Medications</a></li>
+                        <li><a href="#" data-category="otc">Over-the-Counter</a></li>
+                        <li><a href="#" data-category="vitamins">Vitamins & Supplements</a></li>
+                        <li><a href="#" data-category="personal-care">Personal Care</a></li>
+                        <li><a href="#" data-category="first-aid">First Aid</a></li>
+                        <li><a href="#" data-category="wellness">Wellness Products</a></li>
+                    </ul>
+                </div>
+                
+                <div class="filter-options">
+                    <div class="filter-sort">
+                        <label for="sort-by">Sort by:</label>
+                        <select id="sort-by">
+                            <option value="popular">Most Popular</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name">Alphabetical</option>
+                            <option value="newest">Newest</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-view">
+                        <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                        <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="prescription">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88" alt="Cholesterol Medication">
+                        <div class="prescription-badge">Prescription</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lipitor (Atorvastatin)</h3>
+                        <p class="product-desc">Cholesterol-lowering medication, 20mg tablets</p>
+                        <div class="price">
+                            <span class="current-price">$45.99</span>
+                            <span class="insurance">May be covered by insurance</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="orders.html" class="btn small">Order Now</a>
+                            <button class="info-btn"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Product Details</h4>
+                        <p>Atorvastatin is used to treat high cholesterol and to lower the risk of stroke, heart attack, or other heart complications in people with type 2 diabetes, coronary heart disease, or other risk factors.</p>
+                        <button class="close-details"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card" data-category="otc">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e" alt="Pain Relief Cream">
+                        <div class="best-seller">BEST SELLER</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pain Relief Cream</h3>
+                        <p class="product-desc">Fast-acting formula for muscle and joint pain relief</p>
+                        <div class="price">
+                            <span class="current-price">$12.99</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn small add-to-cart">Add to Cart</button>
+                            <button class="info-btn"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Product Details</h4>
+                        <p>This topical analgesic cream provides temporary relief from minor aches and pains of muscles and joints associated with simple backache, arthritis, strains, bruises, and sprains.</p>
+                        <button class="close-details"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card" data-category="vitamins">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae" alt="Vitamin C Supplements">
+                        <div class="discount-badge">-15%</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vitamin C Complex</h3>
+                        <p class="product-desc">Immune system support with 1000mg Vitamin C per serving</p>
+                        <div class="price">
+                            <span class="current-price">$18.99</span>
+                            <span class="old-price">$22.50</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn small add-to-cart">Add to Cart</button>
+                            <button class="info-btn"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Product Details</h4>
+                        <p>Vitamin C is a vital nutrient for health. It helps form and maintain bones, skin, and blood vessels. It is also an antioxidant. Our Vitamin C Complex includes bioflavonoids for enhanced absorption.</p>
+                        <button class="close-details"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card" data-category="otc">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2" alt="Allergy Relief">
+                    </div>
+                    <div class="product-info">
+                        <h3>Allergy Relief</h3>
+                        <p class="product-desc">24-hour non-drowsy formula for allergy symptoms</p>
+                        <div class="price">
+                            <span class="current-price">$14.50</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn small add-to-cart">Add to Cart</button>
+                            <button class="info-btn"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Product Details</h4>
+                        <p>Provides effective relief of symptoms due to hay fever or other upper respiratory allergies: sneezing, runny nose, itchy, watery eyes, itching of the nose or throat.</p>
+                        <button class="close-details"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card" data-category="prescription">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1591744534755-0a8a7e6f2a12" alt="Blood Pressure Medication">
+                        <div class="prescription-badge">Prescription</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lisinopril</h3>
+                        <p class="product-desc">Blood pressure medication, 10mg tablets</p>
+                        <div class="price">
+                            <span class="current-price">$28.75</span>
+                            <span class="insurance">May be covered by insurance</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="orders.html" class="btn small">Order Now</button>
+                            <button class="info-btn"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Product Details</h4>
+                        <p>Lisinopril is used to treat high blood pressure (hypertension) in adults and children who are at least 6 years old. It is also used to treat heart failure and to improve survival after a heart attack.</p>
+                        <button class="close-details"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card" data-category="wellness">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1625772452859-1c03d5bf1137" alt="Probiotics">
+                    </div>
+                    <div class="product-info">
+                        <h3>Advanced Probiotic</h3>
+                        <p class="product-desc">50 billion CFU with 10 probiotic strains</p>
+                        <div class="price">
+                            <span class="current-price">$29.99</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn small add-to-cart">Add to Cart</button>
+                            <button class="info-btn"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Product Details</h4>
+                        <p>Our advanced probiotic formula contains 50 billion CFU and 10 clinically studied strains to support digestive health, immune function, and nutrient absorption. Shelf-stable and doesn't require refrigeration.</p>
+                        <button class="close-details"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="product-card" data-category="first-aid">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118" alt="First Aid Kit">
+                    </div>
+                    <div class="product-info">
+                        <h3>Family First Aid Kit</h3>
+                        <p class="product-desc">Comprehensive 150-piece first aid kit</p>
+                        <div class="price">
+                            <span class="current-price">$34.99</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn small add-to-cart">Add to Cart</button>
+                            <button class="info-btn"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Product Details</h4>
+                        <p>This 150-piece first aid kit contains essential supplies to handle common injuries and emergencies. Compact and portable, it's ideal for home, car, travel, or workplace use.</p>
+                        <button class="close-details"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="product-card" data-category="personal-care">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c" alt="Hand Sanitizer">
+                        <div class="new-badge">NEW</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Antibacterial Hand Sanitizer</h3>
+                        <p class="product-desc">Kills 99.9% of germs, moisturizing formula</p>
+                        <div class="price">
+                            <span class="current-price">$5.99</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn small add-to-cart">Add to Cart</button>
+                            <button class="info-btn"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Product Details</h4>
+                        <p>This alcohol-based hand sanitizer kills 99.9% of most common germs that may cause illness. The moisturizing formula with aloe vera and vitamin E helps prevent skin dryness.</p>
+                        <button class="close-details"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button class="page-btn disabled"><i class="fas fa-chevron-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="product-categories">
+        <div class="container">
+            <h2 class="section-title">Shop by <span class="highlight">Category</span></h2>
+            
+            <div class="categories-grid">
+                <a href="#" class="category-card" data-category="prescription">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88" alt="Prescription Medications">
+                    </div>
+                    <h3>Prescription Medications</h3>
+                </a>
+                
+                <a href="#" class="category-card" data-category="otc">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae" alt="Over-the-Counter">
+                    </div>
+                    <h3>Over-the-Counter</h3>
+                </a>
+                
+                <a href="#" class="category-card" data-category="vitamins">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1625772452859-1c03d5bf1137" alt="Vitamins & Supplements">
+                    </div>
+                    <h3>Vitamins & Supplements</h3>
+                </a>
+                
+                <a href="#" class="category-card" data-category="personal-care">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c" alt="Personal Care">
+                    </div>
+                    <h3>Personal Care</h3>
+                </a>
+                
+                <a href="#" class="category-card" data-category="first-aid">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118" alt="First Aid">
+                    </div>
+                    <h3>First Aid</h3>
+                </a>
+                
+                <a href="#" class="category-card" data-category="wellness">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352" alt="Wellness Products">
+                    </div>
+                    <h3>Wellness Products</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose <span class="highlight">Elixir Pharma</span></h2>
+            
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Quality Assurance</h3>
+                    <p>All our products are sourced from reputable manufacturers and stored under optimal conditions.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Expert Advice</h3>
+                    <p>Our licensed pharmacists are available to answer your questions about medications and health products.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Shopping</h3>
+                    <p>Your personal and health information is protected with industry-standard security measures.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>We offer same-day delivery for local orders and discreet shipping for all products.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h3>Competitive Prices</h3>
+                    <p>We work directly with manufacturers to bring you the best prices on quality health products.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Customer Care</h3>
+                    <p>Our dedicated support team is available to assist you with any questions or concerns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/logo-white.svg" alt="Elixir Pharma Logo" width="160">
+                    <p class="footer-about">Elixir Pharma is committed to providing exceptional pharmacy services with care and professionalism.</p>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="stock.html">Our Products</a></li>
+                        <li><a href="orders.html">Order Online</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Prescription Services</a></li>
+                        <li><a href="#">Home Delivery</a></li>
+                        <li><a href="#">Health Consultations</a></li>
+                        <li><a href="#">Wellness Programs</a></li>
+                        <li><a href="#">Immunizations</a></li>
+                        <li><a href="#">Health Screenings</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Health Street, NY 10001</li>
+                        <li><i class="fas fa-phone-alt"></i> (800) 555-1234</li>
+                        <li><i class="fas fa-envelope"></i> info@elixirpharma.com</li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2023 Elixir Pharma. All Rights Reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fas fa-robot"></i>
+                <h4>Pharmacy Assistant</h4>
+            </div>
+            <button class="chatbot-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages">
+            <div class="chatbot-welcome">
+                <p>Hello! I'm your virtual pharmacy assistant. How can I help you today?</p>
+                <div class="quick-questions">
+                    <button class="quick-question">Prescription refill</button>
+                    <button class="quick-question">Delivery options</button>
+                    <button class="quick-question">Product information</button>
+                    <button class="quick-question">Talk to pharmacist</button>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Type your message...">
+            <button class="chatbot-send">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+    <button class="chatbot-toggle">
+        <i class="fas fa-comment-medical"></i>
+    </button>
+    <!-- Same chatbot as index.html -->
+
+    <script src="js/script.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
